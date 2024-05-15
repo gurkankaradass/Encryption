@@ -15,7 +15,7 @@ function runEventListener(){
 function encode(){
     if(leftText.value==""){
         alert("Kriptolonacak Şifreyi Giriniz");
-        return;
+        return;//Methodu sonlandırır
     }
     rightText.value = btoa(leftText.value);
     leftText.value = "";
@@ -24,7 +24,7 @@ function encode(){
 function decode(){
     if(rightText.value==""){
         alert("Çözülecek Şifreyi Giriniz");
-        
+        return;//Methodu sonlandırır
     }
     leftText.value = atob(rightText.value);
     rightText.value="";
